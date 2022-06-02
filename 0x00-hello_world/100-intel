@@ -1,0 +1,2 @@
+#!/bin/bash
+gcc -S -masm=intel $GFILE -o 4-main.s
