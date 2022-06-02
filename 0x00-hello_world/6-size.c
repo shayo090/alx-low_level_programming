@@ -12,10 +12,9 @@ int main(void)
 	char c;
 	float f;
 
-	printf("The size of an int, %ln.\n", (unsigned long)sizeof(i));
-	printf("The size of a double, %ln.\n", (unsigned long)sizeof(d));
-	printf("The size of a char, %ln.\n", (unsigned long))sizeof(c));
-	printf("The size of a float, %ln.\n", (unsignedd long)sizeof(f));
-
-		return (0);
+	printf("The size of an int, %ln \n", (unsigned long)sizeof(i));
+	printf("The size of a double, %ln \n", (unsigned long)sizeof(d));
+	printf("The size of a char, %ln \n", (unsigned long))sizeof(c));
+	printf("The size of a float, %ln \n", (unsigned long)sizeof(f));
+	return (0);
 }
