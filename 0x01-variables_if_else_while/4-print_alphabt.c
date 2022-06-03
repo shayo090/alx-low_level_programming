@@ -14,13 +14,13 @@ int main(void)
 	char e;
 	char q;
 
-	e = 'e' ;
-	q = 'q' ;
+	e = 'e';
+	q = 'q';
 
 	for (c = 'a'; c <= 'z'; c++)
 	{
 		if (c != e && c != q)
-		putchar(c);
+			putchar(c);
 	}
 	putchar('\n');
 
