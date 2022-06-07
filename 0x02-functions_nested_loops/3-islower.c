@@ -9,12 +9,12 @@
 int _islower(int c)
 {
 	int i;
-	int lower_case = 0;
+	int c;
 
 	for (i = 'a'; i <= 'z'; i++)
 	{
 		if (i == c)
-			lower_case = 1;
+			return (1);
 	}
 	return (0);
 }
