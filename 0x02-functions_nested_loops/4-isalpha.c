@@ -8,11 +8,11 @@
 
 int _isalpha(int c)
 {
-	int i;
+	int i,j;
 
 	for (i = 'a'; i <= 'z'; i++)
-		for (i = 'A'; i <= 'Z'; i++)
-			if ( i ==c )
+		for (j = 'A'; j <= 'Z'; j++)
+			if ( i == c || j == c )
 			{
 				return (1);
 			}
