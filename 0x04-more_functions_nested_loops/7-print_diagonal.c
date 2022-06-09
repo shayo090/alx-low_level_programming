@@ -1,13 +1,13 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * _isdigit - checks for a digit
- * @c: input data
- * Return: 1 if c is a digit or 0 otherwise
+ * print_diagonal - draws a diagonal line
+ *
+ * @n: character representing length of line
+ *
+ * Return: Always 0.Success
  */
-
-int _isdigit(int c)
+void print_diagonal(int n)
 {
 	int i = 0, j;
 
