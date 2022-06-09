@@ -3,7 +3,7 @@
 /**
  * 0-isupper - checks for upper case characters
  * @c: upper case value 
- * Return: Always 0.
+ * Return: 1 if c is uppercase or 0 otherwise
  */
 
 int _isupper(int c)
@@ -11,7 +11,7 @@ int _isupper(int c)
 	int i;
 
 	for(i = 'A'; i <= 'Z'; i++)
-		if (c = i)
+		if (c == i)
 		{
 			return (1);
 		}
