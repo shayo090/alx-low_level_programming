@@ -10,7 +10,6 @@
 
 void print_rev(char *s)
 {
-	int i;
 	int len;
 
 	len = 0;
