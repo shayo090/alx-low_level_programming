@@ -5,6 +5,8 @@
  *
  * @src: source
  *
+ * @n: space available for source in destination
+ *
  * @dest: destination
  *
  * Return: Always 0.
