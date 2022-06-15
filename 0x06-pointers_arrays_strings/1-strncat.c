@@ -26,7 +26,7 @@ char *_strncat(char *dest, char *src, int n)
 	{
 		if (len1 < n)
 		{
-			dest[len2 + len] = src[len1];
+			dest[len2 + len1] = src[len1];
 		}
 		else
 		{
