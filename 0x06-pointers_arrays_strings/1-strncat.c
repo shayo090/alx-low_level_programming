@@ -5,6 +5,8 @@
  *
  * @src: source
  *
+ * @n: an interger
+ *
  * @dest: destination
  *
  * Return: dest.
@@ -27,10 +29,6 @@ char *_strncat(char *dest, char *src, int n)
 		if (len1 < n)
 		{
 			dest[len2 + len1] = src[len1];
-		}
-		else
-		{
-			break;
 		}
 		len1++;
 	}
