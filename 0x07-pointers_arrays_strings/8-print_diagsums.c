@@ -23,5 +23,5 @@ void print_diagsums(int *a, int size)
 		second = second + a[(size - i) - 1];
 		a = a + size;
 	}
-	printf("%d, %d\n", first, second);
+	printf("%i, %i\n", first, second);
 }
