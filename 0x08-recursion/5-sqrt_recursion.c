@@ -15,7 +15,7 @@ int _sqrt_recursion(int n)
 }
 
 /**
- * get_sqrt - helper function to get square root
+ * sqrt_finder - helper function to get square root
  *
  * @n : the number
  *
