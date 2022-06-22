@@ -10,10 +10,7 @@
 
 int _sqrt_recursion(int n)
 {
-	int outcome;
-
-	outcome = sqrt_finder(n, 1); 
-	return (outcome);
+	return (sqrt_finder(n, 1));
 }
 
 /**
