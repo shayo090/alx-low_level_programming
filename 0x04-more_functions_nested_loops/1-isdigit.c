@@ -9,7 +9,8 @@
 
 int _isdigit(int c)
 {
-	int i = 0, j;
+	int i = 0, j,;
+	int n;
 
 	if (n > 0)
 	{
