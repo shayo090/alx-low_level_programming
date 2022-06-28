@@ -4,9 +4,9 @@
 /**
  * alloc_grid - function that returns a 2 dimentional array of ints
  *
- * @width : width;
+ * @width : column;
  *
- * @height : height;
+ * @height : rows;
  *
  * Return: pointer to the array or NULL
  */
@@ -37,14 +37,13 @@ int **alloc_grid(int width, int height)
 			return (NULL);
 		}
 	}
-	
+
 	for (i = 0; i < height; i++)
 	{
-		for (j = 0; j < height; j++)
+		for (j = 0; j < width; j++)
 		{
 			array[i][j] = 0;
 		}
 	}
-	free(array);
 	return (array);
 }
