@@ -36,14 +36,17 @@ char *str_concat(char *s1, char *s2)
 		return (0);
 	}
 
-	for (i = 0; i < len1; i++)
+	for (i = 0; i < len1 + len2; i++)
 	{
-		t[i] = s1[i];
+		if (i < len1)
+		{
+			t[i] = s1[i];
+		}
+		else
+		{
+			t[i] = s2[i - len1];
+		}
 	}
-	for (i = 0; i < len2; i++)
-	{
-		t[i + len1] = s2[i];
-	}
-	t[i] = '\0';
+
 	return (t);
 }
