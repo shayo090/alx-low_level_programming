@@ -41,10 +41,12 @@ char *str_concat(char *s1, char *s2)
 		if (i < len1)
 		{
 			t[i] = s1[i];
+			s1++;
 		}
 		else
 		{
-			t[i] = s2[i];
+			t[i] = s2[i - len1];
+			s2++;
 		}
 	}
 	t[i] = '\0';
