@@ -31,24 +31,23 @@ char *str_concat(char *s1, char *s2)
 	for (len2 = 0; s2[len2] != '\0'; len2++)
 
 	t = malloc(sizeof(char) * (len1 + len2 + 1));
-	if (t == 0)
+	if (t == NULL)
 	{
-		return (0);
+		return (NULL);
 	}
 
-	for (i = 0; i < len1 + len2; i++)
+	for (i = 0; i < len1; i++)
 	{
-		if (i < len1)
-		{
-			t[i] = s1[i];
-			s1++;
-		}
-		else
-		{
-			t[i] = s2[i - len1];
-			s2++;
-		}
+		A[i] = s1[i];
 	}
-	t[i] = '\0';
+	for (i = 0; i <= len2; i++)
+	{
+		if (s2 == NULL)
+		{
+			A[len1] = 0;
+			break;
+		}
+		A[len1 + i] = s2[i];
+	}
 	return (t);
 }
