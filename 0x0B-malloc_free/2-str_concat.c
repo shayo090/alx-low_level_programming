@@ -40,5 +40,5 @@ char *str_concat(char *s1, char *s2)
 	{
 		t[i + len1] = s2[i];
 	}
-	return (NULL);
+	return (t);
 }
