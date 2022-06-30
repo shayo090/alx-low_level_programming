@@ -26,16 +26,16 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (n >= lens2)
 		n = lens2;
 
-	new_str = malloc(lens1 + n + 1);
+	new_str = malloc(sizeof(char) * lens1 + n + 1);
 	if (new_str == NULL)
 		return (NULL);
 
 	for (; i < (lens1 + n); i++)
 	{
-		if (i < lens1)
-			new_str[i] = *s1, s1++;
-		else
-			new_str[i] = *s2, s2++;
+		if (i <= lens1)
+			new_str[i] = s1[i];
+		else if (i >= lens1)
+			new_str[i] = s2[i];
 	}
 	new_str[i] = '\0';
 	return (new_str);
