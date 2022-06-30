@@ -9,12 +9,12 @@
   *
   * Return: pointer
   */
-char *string_nconcat(char *s1, char *s2, unsigned int n);
+char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int len1;
-	int len2;
+	unsigned int len1;
+	unsigned int len2;
 	int *str;
-	int i;
+	unsigned int i;
 
 	if (s1 == NULL)
 	{
@@ -41,13 +41,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n);
 
 	for (i = 0; i < len1; i++)
 	{
-		str[i] = s1[i];
-		s1++;
+		str[i] = s1[i], s1++;
 	}
-	for (i = 0; i < len1 + n; i++)
+	for (i = 0; i < (len1 + n); i++)
 	{
-		str[i] = s2[i];
-		s2++;
+		str[i] = s2[i], s2++;
 	}
 	str[i] = '\0';
 	return (NULL);
