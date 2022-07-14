@@ -3,15 +3,16 @@
 /**
  * free_list - a function that frees a list_t list
  *
- * @head- the pointer to the first node of the link
+ * @head : the pointer to the first node of the link
  *
- * Return
+ * Return : Nothing
  */
 
 void free_list(list_t *head)
 {
 	list_t *temp;
-	
+
+	temp = head;
 	while (head)
 	{
 		temp = head;
