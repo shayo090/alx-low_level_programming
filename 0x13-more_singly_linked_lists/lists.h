@@ -1,7 +1,9 @@
 #ifndef _HEADER_
 #define _HEADER_
+
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
  * struct listint_s - singly linked list
  * @n: integer
@@ -10,6 +12,7 @@
  * Description: singly linked list node structure
  * 
  */
+
 typedef struct listint_s
 {
     int n;
