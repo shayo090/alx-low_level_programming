@@ -5,15 +5,17 @@
  *
  * @head : pointer to the first node
  *
- * Return: pointer to the new list
+ * Return: pointer to the first node of th e reverse lists
  */
 
 listint_t *reverse_listint(listint_t **head)
 {
 	listint_t *prev, *next;
 
-	if (!head)
+	if (head == NULL)
+	{
 		return (0);
+	}
 
 	prev = NULL;
 	while (*head)
